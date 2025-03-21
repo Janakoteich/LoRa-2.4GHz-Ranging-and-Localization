@@ -15,7 +15,7 @@ chmod +x st-stm32cubeide_1.18.0_24413_20250227_1633_amd64.deb_bundle.sh
 #Run the installer:
 sudo ./st-stm32cubeide_1.18.0_24413_20250227_1633_amd64.deb_bundle.sh
 ```
-The kit used is **['SX1280DVK1ZHP, 2.5GHz SX1280 Development Kit'](https://www.semtech.com/products/wireless-rf/lora-connect/sx1280dvk1zhp#talk-with-us-today)** composed of:
+The kit used is **'[SX1280DVK1ZHP, 2.5GHz SX1280 Development Kit](https://www.semtech.com/products/wireless-rf/lora-connect/sx1280dvk1zhp#talk-with-us-today)'** composed of:
 - Radio board: SX1280RF1ZHP RF Module
 - microcontroller MBED board: STM32 Nucleo-64 Development Board (NUCLEO-L476RG with an STM32L476 MCU)
 - Touchscreen Interface
