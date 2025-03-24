@@ -1,6 +1,6 @@
 # LoRa-2.4GHz-Ranging-and-Localization
 
-- Firmware folder: it contains the .bin file to update the firmware of the SX1280 dev kit. It is the latest version for the moment ([firmware from Semtech](https://www.semtech.com/products/wireless-rf/lora-connect/sx1280)).
+- Firmware folder: it contains the .bin file to update the firmware of the SX1280 dev kit. It is the latest version for the moment ([firmware from Semtech](https://www.semtech.com/products/wireless-rf/lora-connect/sx1280)). Be sure to check the website first for teh latest version. (To update the firmware simple dag and drop the .bin file to the kit, as it will appear as an external mass storage)
 
 - Guides folder: In this folder you can find user guides (from Semtech) that could be helpful for experimentation (ranging, localization, etc.) or understanding LoRa 2.4GHz in general.
 
