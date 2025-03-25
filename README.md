@@ -25,5 +25,12 @@ Make sure that Nucleo board is recognized as a serial device and the communicati
 ls -l /dev/ttyACM*
 #Their should be an output (like /dev/ttyACM0 for example), otherwise troubleshoot to fix it
 ```
+The Linux system could detect the ST-LINK, but it struggles to communicate properly. This often happens due to missing permissions or driver issues, thus try maybe:
+```bash
+# Add your user to the dialout group (if not done already):
+sudo usermod -aG dialout $USER
+#Then Log out and back in (or reboot) for it to take effect.
+#Try again to check for ttyACM and if you're lucky it should be recognized now
+```
 
 
