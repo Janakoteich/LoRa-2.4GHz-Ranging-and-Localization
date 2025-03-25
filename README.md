@@ -20,3 +20,10 @@ The kit used is **[SX1280DVK1ZHP](https://www.semtech.com/products/wireless-rf/l
 - microcontroller MBED board: STM32 Nucleo-64 Development Board (NUCLEO-L476RG with an STM32L476 MCU)
 - Touchscreen Interface
 
+Make sure that Nucleo board is recognized as a serial device and the communication link is working:
+```bash
+ls -l /dev/ttyACM*
+#Their should be an output (like /dev/ttyACM0 for example), otherwise troubleshoot to fix it
+```
+
+
