@@ -1,0 +1,14 @@
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:102:6:I2cInit	2
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:126:6:I2cDeInit	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:136:6:I2cResetBus	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:149:9:I2cWrite	3
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:179:9:I2cWriteBuffer	3
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:208:9:I2cRead	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:222:9:I2cReadBuffer	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:237:13:I2cMcuInit	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:254:13:I2cMcuResetBus	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:270:13:I2cMcuDeInit	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:291:16:I2cMcuWriteBuffer	3
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:321:16:I2cMcuReadBuffer	3
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:349:9:I2cMcuWaitStandbyState	2
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:370:6:I2cSetAddrSize	1

@@ -1,0 +1,13 @@
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:97:6:UartInit	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:110:6:UartDeInit	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:124:9:UartEnableFlowControl	3
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:147:1:__io_putchar	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:166:9:UartSend	6
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:197:9:UartStopSending	3
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:215:9:UartReceive	4
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:239:9:UartStopReceiving	4
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:265:6:HAL_UART_TxCpltCallback	3
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:287:6:HAL_UART_RxCpltCallback	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:298:6:HAL_UART_AbortTransmitCpltCallback	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:312:6:HAL_UART_AbortReceiveCpltCallback	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-usart.c:325:13:UartReceiveComplete	10

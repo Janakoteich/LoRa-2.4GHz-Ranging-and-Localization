@@ -1,0 +1,167 @@
+/*!
+ * \file      main-RangingDemo.c
+ *
+ * \brief     Main Program body of the Ranging demo.
+ *
+ * \copyright Revised BSD License, see section \ref LICENSE.
+ *
+ * \code
+ *                ______                              _
+ *               / _____)             _              | |
+ *              ( (____  _____ ____ _| |_ _____  ____| |__
+ *               \____ \| ___ |    (_   _) ___ |/ ___)  _ \
+ *               _____) ) ____| | | || |_| ____( (___| | | |
+ *              (______/|_____)_|_|_| \__)_____)\____)_| |_|
+ *              (C)2013-2017 Semtech
+ *
+ * \endcode
+ *
+ * \author    Semtech
+ */
+
+#define BOARD_NUCLEO_L476RG
+#define SHIELD_PCB_E394V02A
+
+/* Includes ------------------------------------------------------------------*/
+
+#include "hw.h"
+#include "radio.h"
+#include "sx1280.h"
+#include "radio.h"
+#include "utilities.h"
+
+#include "demoRanging.h"
+#include "RangingDisplay.h"
+
+
+/****************************************************************************\
+ * CONSTANT and MACRO definition
+\****************************************************************************/
+
+//#define DEMO_SETTING_ENTITY                          MASTER
+#define DEMO_SETTING_ENTITY                          SLAVE
+
+#define PROXBUFFERSIZE                                  20
+
+
+/***************************************************************************\
+ * RAM data
+\***************************************************************************/
+
+/***************************************************************************\
+ * Local function Prototype
+\***************************************************************************/
+
+/***************************************************************************\
+ * Ranging Demo Main function
+\***************************************************************************/
+
+void main_ranging(void)
+{
+	uint16_t FwVersion=0;
+	printf("Initializing hardware slaveeeeeeeeeeeeeeeeeee...\n\r");
+    HwInit( );
+    printf("Hardware initialized\n\r");
+
+
+	
+	GpioWrite(LED_TX_PORT, LED_TX_PIN, 1);
+    GpioWrite(LED_RX_PORT, LED_RX_PIN, 1);
+
+    printf("Configuring ranging parameters...\n\r");
+    /* 1- Initialize the Ranging Application */
+    RangingDemoInitApplication( DEMO_SETTING_ENTITY );
+    printf("Ranging configured\n\r");
+
+    RangingDemoSetRangingParameters( 40u, DEMO_RNG_ADDR_1, DEMO_RNG_ANT_1, DEMO_RNG_UNIT_SEL_M );
+    RangingDemoSetRadioParameters( LORA_SF6, LORA_BW_1600, LORA_CR_4_5, DEMO_CENTRAL_FREQ_PRESET2, DEMO_POWER_TX_MAX );
+	
+	Radio.Reset();
+	FwVersion = Radio.GetFirmwareVersion();
+
+	//start
+	if(FwVersion == 0) {
+	    printf("ERROR: Radio not responding! Check connections.\n\r");
+	    // Don't proceed with ranging if radio isn't working
+	    while(1); // Stop here for debugging
+	}
+
+	//end
+		
+	printf("DEMO_SETTING_ENTITY = %d\n\r", DEMO_SETTING_ENTITY);
+
+	if(DEMO_SETTING_ENTITY == MASTER)
+	{
+		printf("Ranging Demo as Master , firmware %d \n\r",FwVersion);
+	}
+	else
+	{
+		printf("Ranging Demo as Slave , firmware %d  \n\r",FwVersion);
+	}
+	
+	GpioWrite(LED_TX_PORT, LED_TX_PIN, 0);
+    GpioWrite(LED_RX_PORT, LED_RX_PIN, 0);
+
+    /* Infinite loop */
+    while(1){
+
+    	//start
+    	printf("MASTER: Starting ranging cycle...\n\r");  // ADD THIS LINE
+        //end
+
+    	RangingDemoStatus_t demoStatus;
+		 GpioWrite(LED_TX_PORT, LED_TX_PIN, 1);
+        // Run the ranging demo.
+        do{
+        	//start
+        	printf("MASTER: Ranging demo starts...\n\r");  // ADD THIS LINE
+            //end
+            demoStatus = RangingDemoRun( );
+            printf("MASTER: demoStatus executed...\n\r");  // ADD THIS LINE
+            printf("MASTER: demoStatus = %d\n\r", demoStatus); // Print actual status value
+            printf("MASTER: DEMO_RANGING_RUNNING value = %d\n\r", DEMO_RANGING_RUNNING); // Print actual status value
+
+
+            //start the timeout (remember to remove this)
+            // Add timeout counter to prevent infinite loop
+            static uint16_t timeout_counter = 0;
+            timeout_counter++;
+            if(timeout_counter > 1000) {
+                printf("ERROR: Ranging timeout - breaking loop\n\r");
+                break;
+            }
+
+            HAL_Delay(10); // Small delay to prevent overwhelming the system
+
+            //end here
+
+
+        }while( demoStatus == DEMO_RANGING_RUNNING );
+
+		GpioWrite(LED_TX_PORT, LED_TX_PIN, 0);
+    	//start
+    	printf("turning OFF a transmit indicator LED...\n\r");  // ADD THIS LINE
+        //end
+
+        // If master, display the ranging result.
+        if( DEMO_SETTING_ENTITY == MASTER ){
+        	printf("Displaying results...\n\r");
+            RangingDisplayUartOutputData( );
+            RangingDisplayUartOutputDistance( );
+			HAL_Delay(1000);
+        }
+
+        if( demoStatus != DEMO_RANGING_TERMINATED ){
+        	printf("Resetting ranging demo...\n\r");
+            RangingDemoReset( );
+        }
+
+    }
+
+}
+
+/***************************************************************************\
+ * Local Function Definition
+\***************************************************************************/
+
+

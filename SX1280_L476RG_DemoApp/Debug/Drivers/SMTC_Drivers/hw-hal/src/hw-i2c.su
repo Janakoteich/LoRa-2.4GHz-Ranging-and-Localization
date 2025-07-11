@@ -1,0 +1,14 @@
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:102:6:I2cInit	16	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:126:6:I2cDeInit	16	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:136:6:I2cResetBus	16	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:149:9:I2cWrite	24	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:179:9:I2cWriteBuffer	32	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:208:9:I2cRead	32	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:222:9:I2cReadBuffer	32	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:237:13:I2cMcuInit	24	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:254:13:I2cMcuResetBus	24	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:270:13:I2cMcuDeInit	16	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:291:16:I2cMcuWriteBuffer	56	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:321:16:I2cMcuReadBuffer	56	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:349:9:I2cMcuWaitStandbyState	24	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-i2c.c:370:6:I2cSetAddrSize	16	static

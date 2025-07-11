@@ -1,0 +1,9 @@
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/RangingDisplay.c:91:6:RangingDisplayUartOutputData	2
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/RangingDisplay.c:105:6:RangingDisplayUartOutputDistance	2
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/RangingDisplay.c:136:13:RangingDisplayUartOutputStart	1
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/RangingDisplay.c:162:13:RangingDisplayUartOutputResultHeader	2
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/RangingDisplay.c:195:13:RangingDisplayUartOutputResultRaw	3
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/RangingDisplay.c:223:13:RangingDisplayUartOutputContinue	5
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/RangingDisplay.c:256:14:RangingDisplayGetSpreadingFactor	15
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/RangingDisplay.c:279:14:RangingDisplayGetBandwidth	7
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/RangingDisplay.c:298:17:RangingDisplayGetRangingResult	1

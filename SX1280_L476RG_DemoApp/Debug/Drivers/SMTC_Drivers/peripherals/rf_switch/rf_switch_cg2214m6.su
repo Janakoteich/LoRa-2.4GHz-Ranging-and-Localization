@@ -1,0 +1,4 @@
+../Drivers/SMTC_Drivers/peripherals/rf_switch/rf_switch_cg2214m6.c:42:6:RfSwitchInit	32	static
+../Drivers/SMTC_Drivers/peripherals/rf_switch/rf_switch_cg2214m6.c:57:6:RfSwitchDeinit	8	static
+../Drivers/SMTC_Drivers/peripherals/rf_switch/rf_switch_cg2214m6.c:66:6:SetAntenna1	8	static
+../Drivers/SMTC_Drivers/peripherals/rf_switch/rf_switch_cg2214m6.c:75:6:SetAntenna2	8	static

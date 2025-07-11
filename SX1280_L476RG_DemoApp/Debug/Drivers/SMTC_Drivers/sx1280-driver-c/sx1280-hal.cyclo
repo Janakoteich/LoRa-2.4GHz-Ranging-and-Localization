@@ -1,0 +1,15 @@
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:119:6:SX1280HalWaitOnBusy	2
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:124:6:SX1280HalInit	1
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:130:6:SX1280HalIoIrqInit	1
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:146:6:SX1280HalReset	1
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:155:6:SX1280HalClearInstructionRam	2
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:179:6:SX1280HalWakeup	1
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:198:6:SX1280HalWriteCommand	2
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:218:6:SX1280HalReadCommand	2
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:241:6:SX1280HalWriteRegisters	1
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:260:6:SX1280HalWriteRegister	1
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:265:6:SX1280HalReadRegisters	2
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:290:9:SX1280HalReadRegister	1
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:299:6:SX1280HalWriteBuffer	1
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:317:6:SX1280HalReadBuffer	2
+../Drivers/SMTC_Drivers/sx1280-driver-c/sx1280-hal.c:341:9:SX1280HalGetDioStatus	1

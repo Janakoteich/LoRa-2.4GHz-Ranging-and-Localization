@@ -1,0 +1,5 @@
+../Drivers/SMTC_Drivers/hw-hal/src/hw.c:33:6:HwInit	8	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw.c:56:6:HwSetLowPower	8	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw.c:156:6:HAL_Delay	24	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw.c:169:6:_Error_Handler	16	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw.c:177:6:uartCallback	16	static

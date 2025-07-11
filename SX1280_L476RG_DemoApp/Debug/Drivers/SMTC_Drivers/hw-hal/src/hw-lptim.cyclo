@@ -1,0 +1,7 @@
+../Drivers/CMSIS/Include/core_cm4.h:1679:22:__NVIC_EnableIRQ	2
+../Drivers/CMSIS/Include/core_cm4.h:1809:22:__NVIC_SetPriority	2
+../Drivers/SMTC_Drivers/hw-hal/src/hw-lptim.c:71:6:TimerCreateTimer	17
+../Drivers/SMTC_Drivers/hw-hal/src/hw-lptim.c:125:6:TimerCancelTimer	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-lptim.c:135:6:LPTIM1_IRQHandler	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-lptim.c:140:6:HAL_LPTIM_CompareMatchCallback	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-lptim.c:152:13:TimerLptimConfig	2

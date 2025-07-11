@@ -1,0 +1,9 @@
+../Drivers/SMTC_Drivers/hw-hal/src/hw-gpio.c:39:6:GpioInit	8	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-gpio.c:47:6:GpioDeInit	32	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-gpio.c:122:6:GpioSetIrq	32	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-gpio.c:147:6:GpioLaunchIrqHandler	24	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-gpio.c:165:9:GpioGetBitPos	24	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-gpio.c:196:6:GpioWrite	24	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-gpio.c:210:10:GpioRead	16	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-gpio.c:220:6:HAL_GPIO_EXTI_Callback	16	static
+../Drivers/SMTC_Drivers/hw-hal/src/hw-gpio.c:230:11:MSP_GetIRQn	16	static

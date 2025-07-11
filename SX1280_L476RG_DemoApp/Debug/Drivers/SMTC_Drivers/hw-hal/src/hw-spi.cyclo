@@ -1,0 +1,6 @@
+../Drivers/SMTC_Drivers/hw-hal/src/hw-spi.c:31:6:SpiInit	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-spi.c:37:6:SpiDeInit	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-spi.c:50:6:SpiInOut	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-spi.c:64:6:SpiIn	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-spi.c:75:6:HAL_SPI_TxRxCpltCallback	1
+../Drivers/SMTC_Drivers/hw-hal/src/hw-spi.c:80:6:HAL_SPI_TxCpltCallback	1

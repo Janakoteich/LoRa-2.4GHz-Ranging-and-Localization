@@ -1,0 +1,3 @@
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/timoueter.c:5:14:Timoueter_New	4	static
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/timoueter.c:10:6:Timoueter_SetMs	16	static
+../Drivers/SMTC_Drivers/DemoApp/Demo ranging/timoueter.c:15:6:Timoueter_HasExpired	16	static
